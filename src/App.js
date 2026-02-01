@@ -1,18 +1,21 @@
-
 import './App.css';
-import Header from './components/Header';
-import Forms from './components/Forms';
-import Footer from './components/Footer';
+import React, {useState} from'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Table from 'react-bootstrap/Table'
-function App() {
-  return (
-    <div className="App">
-      < Header/>
-      <Forms/>
-      <Footer/>
-    </div>
-  );
-}
+import Header from './Components/Header';
+import Contactpage from './Pages/Contactpage';
+import Groompage from './Pages/Groompage';
+import Homepage from './Pages/Homepage';
 
+function App() {
+   return (
+   <div className="App">
+      <Header/>
+      <Homepage/>
+      <Contactpage/>  {/* Add Contactpage component here */}  {/* Add Groompage component here */}  {/* Add Homepage component here */}  {/* Add Footer component here */}  {/* Add Forms component here */}  {/* Add Main component here */}  {/* Add Footer component here */}  {/* Add Footer component here */}  {/* Add Footer component here */}  {/* Add Footer component here */}  {/* Add Footer component here */}  {/* Add Footer component here */}  {/* Add Footer component here */}
+      <Groompage/>
+   </div>
+   );
+  }
+
+ 
 export default App;

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import GroomOption from '../Components/Groom/Groomoption';
+import GroomOption from './Components/Groom/GroomOption';
 
 export default function GroomOptions() {
   const [options, setOptions] = useState([{

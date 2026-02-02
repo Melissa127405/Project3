@@ -1,8 +1,15 @@
 import React from 'react'
+import Header from './Header'
+import Footer from './Footer'
+import {Outlet, Link} from "react-router-dom";
 
 export default function Main() {
   return (
-    <div>Main</div>
+   <>
+   <Header />
+   <Outlet />
+   <Footer />
+   </>
   )
 }
 

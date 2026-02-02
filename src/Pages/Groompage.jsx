@@ -34,7 +34,7 @@ function handleUpdate(event, naturalindex) {
 
 
     return (
-       <Container>
+    <Container>
       <Row>
         <Col>
     <Table striped hover bordered  >
@@ -82,15 +82,12 @@ function handleUpdate(event, naturalindex) {
         </tfoot>
         <tr>
         </tr>
-    
-
-    </Table>
-   
-   </Col>
+     </Table>
+        </Col>
       </Row>
     </Container>
     
-    )
+     )
 }
 
 

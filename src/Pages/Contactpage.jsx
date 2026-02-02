@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
@@ -12,14 +12,42 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 function Contactpage () {
      // Declare a state variable for the doodle's name, type, first and last name, and email
-  const [doodleName, setDoodleName] = React.useState({   doodleName: '',   doodleType: '',    firstLast: '',    contactEmail: ''    });
-   
-   function handleChange(event) {
-       setDoodleName({...doodleName, [event.target.name]: event.target.value });
-       console.log (event.target.name);
-     }
-     
-  return (
+const [DoodleName, setDoodleName] = useState("fluffy")
+const [DoodleType, setDoodleType] = useState("goldendoodle")
+const [FirstLast, setFirstLast] = useState("FrankReynolds")
+const [ContactEmail, setContactEmail] = useState("frankreynolds.com")
+
+
+function handleDoodleName(event) {
+    console.log (event)
+    console.log (event.target.value)
+    console.log (event.target.name)
+    setDoodleName({...DoodleName, doodleName: event.target.value })
+}
+
+function handleDoodleType(event) {
+    console.log (event)
+    console.log (event.target.value)
+    console.log (event.target.name)
+    setDoodleType({...DoodleType, doodletype: event.target.value })
+}
+
+function handleFirstLast(event) {
+    console.log (event)
+    console.log (event.target.value)
+    console.log (event.target.name)
+    setFirstLast({...FirstLast, firstLast: event.target.value })
+}
+
+function handleContactEmail(event) {
+    console.log (event)
+    console.log (event.target.value)
+    console.log (event.target.name)
+    setContactEmail({...ContactEmail, contactEmail: event.target.value })
+}
+    
+return (
+    <>
      <Container>
          <Row>
          <Col>
@@ -28,27 +56,27 @@ function Contactpage () {
          <Form.Label>Doodle's Name</Form.Label>
          <Form.Control 
          type="text"  
-         name="doodleName"
-         value={doodleName.doodleName}
-         onChange={handleChange}
+         name="DoodleName"
+         value={DoodleName.DoodleName}
+         onChange={handleDoodleName}
          />
      </Form.Group>
      <Form.Group className="mb-3" controlId="formBasicPassword">
          <Form.Label>What Type of Doodle?</Form.Label>
          <Form.Control 
          type="text "  
-         name="doodleType"
-         value={doodleName.doodleType}
-         onChange={handleChange}
+         name="DoodleType"
+         value={DoodleType.DoodleType}
+         onChange={handleDoodleType}
          />
          </Form.Group>
      <Form.Group className="mb-3" controlId="formBasicPassword">
          <Form.Label>Your First and Last Name</Form.Label>
          <Form.Control 
          type="text"
-         name="firstLast"
-         value={doodleName.firstLast}
-         onChange={handleChange}
+         name="FirtsLadt"
+         value={FirstLast.FirstLast}
+         onChange={handleFirstLast}
          />
      </Form.Group>
      <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -56,8 +84,8 @@ function Contactpage () {
          <Form.Control 
          type="text" 
          name="contactEmail"
-         value={doodleName.contactEmail}
-         onChange={handleChange}
+         value={ContactEmail.ContactEmail}
+         onChange={handleContactEmail}
          />
      </Form.Group>
        <Form.Group className="mb-3" controlId="formBasicCheckbox">
@@ -70,7 +98,7 @@ function Contactpage () {
          </Col>
          </Row>
      </Container>
- 
+  </>
      );
  }
 

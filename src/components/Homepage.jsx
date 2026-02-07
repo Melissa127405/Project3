@@ -6,7 +6,7 @@ import ladywdoodle from './assets/ladywdoodle.jpg';
 export default function Homepage() {
   return (
     <div className="Homepage-title">
-      <h1>Welcome to Doodle Grooms!</h1>
+      <h1>Welcome to Doodle Groom!</h1>
       <p>
         We hope to give you and your Doodle all the variaty and style you could possiably imagine.
       </p>

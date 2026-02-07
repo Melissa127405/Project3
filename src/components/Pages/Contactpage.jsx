@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Table from 'react-bootstrap/Table';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import doodleoutside from '../assets/doodleoutside.jpg';
 
 
 
@@ -97,10 +98,18 @@ return (
      </form> 
          </Col>
          </Row>
+     <img 
+        src={doodleoutside}
+        alt="doodle" 
+        className="doodle-image2"
+        style={{ width: "200px", borderRadius: "10px", marginTop: "1rem", marginBottom: "1rem" }}
+        />
      </Container>
-  </>
-     );
+        </>
+
+    );
  }
+
 
 
 export default Contactpage;

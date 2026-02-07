@@ -39,17 +39,14 @@ return (
   <>
     <div className="groom-flex">
       <h2>Please choose from each Doodle area listed below.</h2>
-
-   <img
+    <img
       src={doodlechair} 
-        alt="doodle in chair" 
-        classname="doodle-image1"
-        style={{ width: "200px", borderRadius: "10px", marginTop: "1rem" , marginBottom: "1rem" }}
-   />
-
-         <GroomOption options={options} setOptions={setOptions} />
-
-      <h3>You are also welcome to add a style, if we don’t have it listed.</h3>
+      alt="doodle in chair" 
+      classname="doodle-image1"
+      style={{ width: "200px", borderRadius: "10px", marginTop: "1rem" , marginBottom: "1rem"}}
+      />
+    <GroomOption options={options} setOptions={setOptions} />
+      <h3>You are also welcome to add a style, if we don't have it listed.</h3>
     </div>
   </>
 );

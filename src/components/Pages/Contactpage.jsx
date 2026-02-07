@@ -63,7 +63,7 @@ return (
          />
      </Form.Group>
      <Form.Group className="mb-3" controlId="formBasicPassword">
-         <Form.Label>What Type of Doodle?</Form.Label>
+         <Form.Label>Please Comment , What Type of Doodle?</Form.Label>
          <Form.Control 
          type="text "  
          name="DoodleType"

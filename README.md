@@ -25,3 +25,8 @@
 # Wireframes
 
 ![wireframe](./src/components/assets/project%203.drawio.png) 
+
+# Screenshot 
+   I wanted to show the page which allows the user to add / delete and the stylist can check off item once completed. Also included Home page and Contact info images 
+
+![screenshot](./src/components/assets/contactscreenshot.png)

@@ -30,3 +30,7 @@
    I wanted to show the page which allows the user to add / delete and the stylist can check off item once completed. Also included Home page and Contact info images 
 
 ![screenshot](./src/components/assets/contactscreenshot.png)
+
+![screenshot](./src/components/assets/homescreenshot.png)
+
+![screenshot](./src/components/assets/Screenshot%202026-02-14%20144457.png)
